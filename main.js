@@ -25,9 +25,18 @@ else {
 	alert(false);
 }
 
-var stateAbbr = prompt("Enter State Abbreviation in Caps: ");
+var stateAbbr = prompt("Enter State Abbreviation in Caps:");
 
 if (stateAbbr < 3 && stateAbbr === stateAbbr.toUpperCase()) {
+	alert(true);
+}
+else {
+	alert(false);
+}
+
+var married = prompt("Are you married? Yes or No:");
+
+if (married.toLowerCase() == 'yes' || married.toLowerCase() == 'no') {
 	alert(true);
 }
 else {
